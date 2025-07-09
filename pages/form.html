@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doordarshi Yogi</title>
+    <link rel="stylesheet" href="/style/form.css">
+</head>
+
+<body>
+    <div id="head">
+        <a href="/index.html"> <b>दूरदर्शी समूह</b></a>
+        <div>
+            <a href="#"><img id="whatsapp" src="/style/img/whatsapp.png" alt=""></a>
+            <a href="#"><img src="/style/img/facebook.png" alt=""></a>
+            <a href="#"><img src="/style/img/insta logo.png" alt=""></a>
+            <a href="#"><img src="/style/img/twitter.png" alt=""></a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div id="page">
+        <div id="nav">
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                    <li><a href="/pages/donate.html">Donate</a></li>
+                    <li><a href="/pages/joinus.html">Join us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="content">
+            <div id="messagebox">
+                <h2>Download PDF</h2>
+                <form action="/pages/info.html">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Contact</label>
+                        <input name="contact" id="contact" required></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div id="ad">
+
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>© Copyright 2024-2034 doordarsheesamooh.in. All rights reserved. Developed by <a
+                href="https://aniruddhamanmode.in" style="color: white;">Aniruddha Manmode.</a>
+        </p>
+    </div>
+    <!-- Add these scripts before your form.js -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
+    <script src="/js/form.js"></script>
+</body>
+
+</html>
