@@ -1,0 +1,257 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+#head {
+  background-color: rgb(218, 109, 31);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+#head img {
+  width: 28px;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+#head a {
+  color: aliceblue;
+  font-size: 30px;
+  font-style: bold;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 2px 0;
+}
+
+#page {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+#nav {
+  background-color: white;
+  flex: 1;
+  min-width: 150px;
+}
+
+#nav ul {
+  list-style-type: none;
+  padding: 0%;
+}
+
+#nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  display: block;
+  padding: 10px 40px;
+}
+
+#nav li #join {
+  background-color: rgba(216, 90, 0, 0.829);
+  color: #fff;
+}
+
+#nav li a:hover {
+  transition: background-color 0.3s ease;
+  background-color: rgba(216, 90, 0, 0.829);
+  color: #fff;
+}
+
+#content {
+  background-image: url("img//Background/Yoga\ wallpaper\ small.jpg");
+  background-position: center;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 3;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#content #header {
+  text-align: center;
+}
+
+.container {
+  width: 89%;
+  max-width: 500px; /* Add a max-width */
+  margin: auto;
+  padding: 38px 38px 11px;
+  background: rgba(255, 255, 255, 0.9); /* Add a semi-transparent background */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  display: ruby;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.container h1 {
+  color: #353535;
+}
+
+.container button {
+  padding: 10px 25px;
+  color: #fff;
+  text-decoration: none;
+  background: rgb(216, 109, 33);
+  border-radius: 5px;
+}
+
+.container div {
+  padding: 10px 10px;
+  margin: 10px;
+  float: right;
+}
+
+.container a:hover {
+  transition: background-color 0.3s ease;
+  background: rgb(184, 83, 11);
+}
+
+#ad {
+  background-color: white;
+  flex: 1;
+  min-width: 200px;
+}
+
+#footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 0.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  #nav {
+    display: none;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  #head img {
+    width: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #head b {
+    font-size: 20px;
+  }
+
+  #nav.active {
+    display: block;
+  }
+
+  #page {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 89%;
+    max-width: 500px; /* Add a max-width */
+    margin: auto;
+    padding: 15px 15px 7px 15px;
+    background: rgba(
+      255,
+      255,
+      255,
+      0.9
+    ); /* Add a semi-transparent background */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: ruby;
+  }
+
+  .container h1 {
+    font-size: 25px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 4px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1%;
+  }
+
+  .container a {
+    font-size: 14px;
+    padding: 5px 20px;
+    color: #fff;
+    text-decoration: none;
+    background: rgb(216, 109, 33);
+    border-radius: 5px;
+  }
+
+  .container div {
+    padding: 0%;
+    margin: 10px;
+    float: right;
+  }
+
+  #ad {
+    min-height: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #nav {
+    transition: all 0.3s ease-in-out;
+  }
+}

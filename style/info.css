@@ -1,0 +1,220 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#head {
+    background-color: rgb(218, 109, 31);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#head img {
+    width: 28px;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+#head a {
+    color: aliceblue;
+    font-size: 30px;
+    font-style: bold;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 2px 0;
+}
+
+#page {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+#nav {
+    background-color: white;
+    flex: 1;
+    min-width: 150px;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0%;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    display: block;
+    padding: 10px 40px;
+}
+
+#nav li a:hover {
+    transition: background-color 0.3s ease;
+    background-color: rgba(216, 90, 0, 0.829);
+    color: #fff;
+}
+
+#content {
+    background-image: url("img//Background/Yoga\ wallpaper\ small.jpg");
+    background-position: center;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 3;
+    min-height: 400px;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#content #PDF {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 50px;
+    justify-content: center;
+    display: grid;
+}
+
+#content #PDF img {
+    width: 130px;
+}
+
+#content #PDF #img {
+    justify-content: center;
+    display: flex;
+    padding: 30px 30px 0px 30px;
+}
+
+#content #PDF #text {
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+}
+
+#content #PDF #button {
+    padding: 20px;
+}
+
+#content #PDF a{
+    padding: 15px;
+    background-color: green;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#content #PDF a:hover{
+    text-decoration: underline;
+}
+
+#ad {
+    background-color: white;
+    flex: 1;
+    min-width: 200px;
+}
+
+#footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.6rem;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    #nav {
+        display: none;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+    #head img {
+        width: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #head b {
+        font-size: 20px;
+    }
+
+    #nav.active {
+        display: block;
+    }
+
+    #content #PDF {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        margin: 50px;
+        justify-content: center;
+        display: grid;
+    }
+    
+    #content #PDF img {
+        width: 96px;
+    }
+    
+    #content #PDF #img {
+        justify-content: center;
+        display: flex;
+        padding: 30px 30px 0px 30px;
+    }
+    
+    #content #PDF #text {
+        justify-content: center;
+        display: flex;
+        font-size: 17px;
+    }
+    
+    #content #PDF #button {
+        padding: 15px;
+    }
+    
+    #content #PDF a{
+        padding: 15px;
+        background-color: green;
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    #page {
+        flex-direction: column;
+    }
+
+    #ad {
+        min-height: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #nav {
+        transition: all 0.3s ease-in-out;
+    }
+}
+

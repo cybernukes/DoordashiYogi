@@ -1,0 +1,255 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#head {
+    background-color: rgb(218, 109, 31);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#head img {
+    width: 28px;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+#head a {
+    color: aliceblue;
+    font-size: 30px;
+    font-style: bold;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 2px 0;
+}
+
+#page {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+#nav {
+    background-color: white;
+    flex: 1;
+    min-width: 150px;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0%;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    display: block;
+    padding: 10px 40px;
+}
+
+#nav li a:hover {
+    transition: background-color 0.3s ease;
+    background-color: rgba(216, 90, 0, 0.829);
+    color: #fff;
+}
+
+#content {
+    background-image: url("img//Background/Yoga\ wallpaper\ small.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 3;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#messagebox {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+#messagebox label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#messagebox input,
+#messagebox textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+#messagebox textarea {
+    height: 100px;
+    resize: vertical;
+}
+#messagebox button {
+    background-color: rgb(218, 109, 31);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 34%;
+    float: right;
+    transition: background-color 0.3s ease;
+}
+
+#messagebox button:hover {
+    background-color: rgb(175, 91, 30);
+}
+
+#ad {
+    background-color: white;
+    flex: 1;
+    min-width: 200px;
+}
+
+#footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.6rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    #nav {
+        display: none;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+    #head img {
+        width: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #head b {
+        font-size: 20px;
+    }
+
+    #nav.active {
+        display: block;
+    }
+
+    #page {
+        flex-direction: column;
+    }
+
+    .form-group {
+        margin-bottom: 2px;
+    }
+
+    #messagebox {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 30px 30px 13px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        box-sizing: border-box;
+    }
+    
+
+    #messagebox label {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    #messagebox input,
+    #messagebox textarea {
+        width: 100%;
+        padding: 7px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-sizing: border-box;
+    }
+
+    #messagebox button {
+        margin-top: 10px;
+        background-color: rgb(218, 109, 31);
+        color: white;
+        border: none;
+        padding: 8px;
+        font-size: 13px;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 34%;
+        float: right;
+        transition: background-color 0.3s ease;
+    }
+
+    #content h2 {
+        margin-top: 0;
+        font-size: 24px;
+    }
+
+    #ad {
+        min-height: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #content h1 {
+        font-size: 2rem;
+    }
+    #nav {
+        transition: all 0.3s ease-in-out;
+    }
+}
