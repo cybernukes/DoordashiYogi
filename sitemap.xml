@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://yourdomain.com/index.html</loc>
+    <loc>https://doordarsheesamooh.in/index.html</loc>
   </url>
   <url>
-    <loc>https://yourdomain.com/pages/about.html</loc>
+    <loc>https://doordarsheesamooh.in/pages/about.html</loc>
   </url>
   <url>
-    <loc>https://yourdomain.com/pages/admin.html</loc>
+    <loc>https://doordarsheesamooh.in/pages/contact.html</loc>
   </url>
   <url>
-    <loc>https://yourdomain.com/pages/contact.html</loc>
+    <loc>https://doordarsheesamooh.in/pages/donate.html</loc>
   </url>
   <url>
-    <loc>https://yourdomain.com/pages/donate.html</loc>
+    <loc>https://doordarsheesamooh.in/pages/form.html</loc>
   </url>
   <url>
-    <loc>https://yourdomain.com/pages/form.html</loc>
+    <loc>https://doordarsheesamooh.in/pages/info.html</loc>
   </url>
   <url>
-    <loc>https://yourdomain.com/pages/info.html</loc>
-  </url>
-  <url>
-    <loc>https://yourdomain.com/pages/joinus.html</loc>
+    <loc>https://doordarsheesamooh.in/pages/joinus.html</loc>
   </url>
 </urlset>
