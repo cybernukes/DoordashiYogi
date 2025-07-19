@@ -81,6 +81,11 @@ body {
   color: #fff;
 }
 
+#nav li #Home {
+  background-color: rgba(216, 90, 0, 0.829);
+  color: #fff;
+}
+
 #content {
   background-image: url("img//Background/Yoga\ wallpaper\ small.jpg");
   background-position: center;

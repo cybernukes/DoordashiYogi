@@ -1,259 +1,263 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 #head {
-    background-color: rgb(218, 109, 31);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+  background-color: rgb(218, 109, 31);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 #head img {
-    width: 28px;
-    margin-left: 14px;
-    margin-right: 14px;
+  width: 28px;
+  margin-left: 14px;
+  margin-right: 14px;
 }
 
 #head a {
-    color: aliceblue;
-    font-size: 30px;
-    font-style: bold;
-    text-decoration: none;
+  color: aliceblue;
+  font-size: 30px;
+  font-style: bold;
+  text-decoration: none;
 }
 
 .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .hamburger span {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 2px 0;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 2px 0;
 }
 
 #page {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 #nav {
-    background-color: white;
-    flex: 1;
-    min-width: 150px;
+  background-color: white;
+  flex: 1;
+  min-width: 150px;
 }
 
 #nav ul {
-    list-style-type: none;
-    padding: 0%;
+  list-style-type: none;
+  padding: 0%;
 }
 
 #nav li a {
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-    display: block;
-    padding: 10px 40px;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  display: block;
+  padding: 10px 40px;
 }
 
 #nav li #Donate {
-    background-color: rgba(216, 90, 0, 0.829);
-    color: #fff;
+  background-color: rgba(216, 90, 0, 0.829);
+  color: #fff;
 }
 
 #nav li a:hover {
-    transition: background-color 0.3s ease;
-    background-color: rgba(216, 90, 0, 0.829);
-    color: #fff;
+  transition: background-color 0.3s ease;
+  background-color: rgba(216, 90, 0, 0.829);
+  color: #fff;
+}
+
+#nav li #Home {
+  background-color: rgba(216, 90, 0, 0.829);
+  color: #fff;
 }
 
 #content {
-    background-image: url("img//Background/Yoga\ wallpaper\ small.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex: 3;
-    min-height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+  background-image: url("img//Background/Yoga\ wallpaper\ small.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 3;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .container {
-    width: 89%;
-    max-width: 500px; /* Add a max-width */
-    margin: auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9); /* Add a semi-transparent background */
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 89%;
+  max-width: 500px; /* Add a max-width */
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* Add a semi-transparent background */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .container #donationForm {
-    background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0);
 }
 
 h1 {
-    color: #353535;
-    text-align: center;
+  color: #353535;
+  text-align: center;
 }
 form {
-    background: #fff;
-    padding: 20px 20px 0px 20px;
+  background: #fff;
+  padding: 20px 20px 0px 20px;
 }
 label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 input[type="text"],
 input[type="contact"],
 input[type="email"],
 input[type="number"],
 input[type="submit"] {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 7px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 7px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 input[type="submit"] {
-    float: right;
-    margin-top: 18px;
-    display: block;
-    width: 30%;
-    padding: 7px;
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    background: rgb(216, 109, 33);
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  float: right;
+  margin-top: 18px;
+  display: block;
+  width: 30%;
+  padding: 7px;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  background: rgb(216, 109, 33);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 input[type="submit"]:hover {
-    transition: background-color 0.3s ease;
-    background: rgb(184, 83, 11);
+  transition: background-color 0.3s ease;
+  background: rgb(184, 83, 11);
 }
 #message {
-    margin-top: 20px;
-    padding: 10px;
-    background: #e6e6e6;
-    border-radius: 4px;
-    display: none;
+  margin-top: 20px;
+  padding: 10px;
+  background: #e6e6e6;
+  border-radius: 4px;
+  display: none;
 }
 
 #ad {
-    background-color: white;
-    flex: 1;
-    min-width: 200px;
+  background-color: white;
+  flex: 1;
+  min-width: 200px;
 }
 
 #footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    font-size: 0.6rem;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 0.6rem;
 }
 
-
-
 @media screen and (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
+  .hamburger {
+    display: flex;
+  }
 
-    #nav {
-        display: none;
-        width: 100%;
-        transition: all 0.3s ease-in-out;
-    }
-    #head img {
-        width: 20px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
+  #nav {
+    display: none;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  #head img {
+    width: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 
-    #head b {
-        font-size: 20px;
-    }
+  #head b {
+    font-size: 20px;
+  }
 
-    #nav.active {
-        display: block;
-    }
+  #nav.active {
+    display: block;
+  }
 
-    #page {
-        flex-direction: column;
-    }
+  #page {
+    flex-direction: column;
+  }
 
-    .container {
-        padding: 9px;
-    }
+  .container {
+    padding: 9px;
+  }
 
-    h1 {
-        font-size: 20px;
-    }
+  h1 {
+    font-size: 20px;
+  }
 
-    label {
-        font-size: 13px;
-    }
+  label {
+    font-size: 13px;
+  }
 
-    input[type="text"],
-    input[type="contact"],
-    input[type="email"],
-    input[type="number"],
-    input[type="submit"] {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 7px;
-        margin-bottom: 7px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-    }
-    
-    input[type="submit"] {
-        margin-top: 10px;
-        width: 50%;
-        padding: 5px;
-        font-size: 14px;
-        font-weight: 600;
-    }
+  input[type="text"],
+  input[type="contact"],
+  input[type="email"],
+  input[type="number"],
+  input[type="submit"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 7px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
 
-    .form-group {
-        margin-bottom: 2px;
-    }
+  input[type="submit"] {
+    margin-top: 10px;
+    width: 50%;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;
+  }
 
-    #content h1 {
-        font-size: 3rem;
-    }
+  .form-group {
+    margin-bottom: 2px;
+  }
 
-    #ad {
-        min-height: 100px;
-    }
+  #content h1 {
+    font-size: 3rem;
+  }
+
+  #ad {
+    min-height: 100px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    #content h1 {
-        font-size: 25px;
-        margin: 9px;
-    }
-    #nav {
-        transition: all 0.3s ease-in-out;
-    }
+  #content h1 {
+    font-size: 25px;
+    margin: 9px;
+  }
+  #nav {
+    transition: all 0.3s ease-in-out;
+  }
 }
